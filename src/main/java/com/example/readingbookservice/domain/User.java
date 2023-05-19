@@ -1,6 +1,6 @@
 package com.example.readingbookservice.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
 @Entity

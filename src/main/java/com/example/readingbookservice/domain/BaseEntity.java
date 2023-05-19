@@ -1,12 +1,9 @@
 package com.example.readingbookservice.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
 import lombok.Data;
 
-import java.io.Serializable;
+import javax.persistence.*;
 
 @Data
 public class BaseEntity {

@@ -1,7 +1,7 @@
 package com.example.readingbookservice.domain;
 
 import com.fasterxml.jackson.annotation.*;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
