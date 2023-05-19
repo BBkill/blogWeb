@@ -22,13 +22,16 @@ public class Book extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private String name;
 
     private String description;
 
     private Long released;
+
+    @Column(name = "path_img")
+    private String pathImg;
 
     @Column(name = "total_pages")
     private Long totalPages;

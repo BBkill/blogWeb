@@ -74,13 +74,13 @@ public class UserServiceIml implements UserService {
         if (!StringUtils.hasLength(password)) {
             res = res.concat(INVALID_PASSWORD).concat("\n");
         } else {
-            password = password.trim();
+            dto.setPassword(password.trim());
         }
 
         if (!StringUtils.hasLength(name)) {
             res = res.concat(INVALID_NAME).concat("\n");
         } else {
-            name = name.trim();
+            dto.setName(name.trim());
         }
 
         if (!StringUtils.hasLength(email)) {
@@ -92,7 +92,7 @@ public class UserServiceIml implements UserService {
             }
         }
         if (StringUtils.hasLength(phone)) {
-            phone = phone.trim();
+            dto.setPhone(phone.trim());
         }
         return res;
     }

@@ -2,18 +2,19 @@ create schema ltw;
 use ltw;
 create table users (
 	id int primary key auto_increment,
-    username varchar(255),
+    username varchar(255) unique not null,
     name varchar(255),
     gender int,
     phone varchar(20),
     password varchar(255),
-    email varchar(255)
+    email varchar(255) unique not null
 );
 
 create table book(
 	id int primary key auto_increment,
     name varchar(255),
     description varchar(255),
+    path_img varchar(255),
     released int,
     total_pages int
 );
